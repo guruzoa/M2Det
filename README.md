@@ -4,6 +4,7 @@ Forked from https://github.com/qijiezhao/M2Det
 Codebase for AAAI2019 "M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network" [[Paper link]](https://qijiezhao.github.io/imgs/m2det.pdf)
 
 Author: Qijie Zhao. Date: 19/01/2019
+Modified : Yongwoo Kim. Date: 19/06/2019
 
 # Contents
 
@@ -89,11 +90,15 @@ We get the multi-level multi-scale feature, and try to re-allocate a weight for 
 
 - Prepare python environment using [Anaconda3](https://www.anaconda.com/download/).
 - Install deeplearning framework, i.e., pytorch, torchvision and other libs.
-
 ```Shell
 conda install pytorch==0.4.1 torchvision -c pytorch
 pip install opencv-python tqdm
 ```
+- For your convenient, please refer to pre-defined conda env : conda_env_m2det.yaml
+```Shell
+conda env create --file=myfile.yaml
+```
+
 - Clone this repository.
 ```Shell
 git clone https://github.com/qijiezhao/M2Det.git
